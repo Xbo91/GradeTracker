@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradeTracker — BICT GPA Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lacquer: '#121212',
+              'lacquer-raised': '#1c1c1c',
+              'lacquer-deep': '#0a0a0a',
+              graphite: '#262626',
+              kinpaku: '#d4a843',
+              'kinpaku-pale': '#e8c87a',
+              patina: '#7dd3c0',
+              'patina-pale': '#a8e8e0',
+              champagne: '#e8e8e8',
+              'text-warm': '#e0e0e0',
+              'text-muted': '#b8b8b8',
+              'text-faint': '#9e9e9e',
+            },
+            fontFamily: {
+              display: ['Alumni Sans', 'Albert Sans', 'Arial', 'sans-serif'],
+              body: ['Albert Sans', 'Avenir Next', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              mono: ['SFMono-Regular', 'Roboto Mono', 'Consolas', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&family=Alumni+Sans:wght@100;300;400&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-lacquer text-champagne font-body antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
